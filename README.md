@@ -1,4 +1,6 @@
-- Timelines requests (timeline):
+- ## Timelines requests (/timeline):
+
+get methods parameters:
 
 | field             | type              | description                                           | example    |
 | ----------------- | ----------------- | ----------------------------------------------------- | ---------- |
@@ -6,7 +8,7 @@
 | creationDateStart | String (optional) | which retrieves timelines created after a given date  | 08-09-2021 |
 | creationDateEnd   | String (optional) | which retrieves timelines created before a given date | 11-09-2021 |
 
-​	*(You can also use "add", "update", "delete" operations)
+​		*(You can also use "add", "update", "delete" methods)
 
 ### Successful Response: 
 
@@ -52,7 +54,9 @@ http://localhost:8080/timeline/get?creationDateStart=08-09-2021?creationDateEnd=
 
 
 
-- Moments requests ("/moment"):
+- ## Moments requests ("/moment"):
+
+get methods parameters:
 
 | field           | type              | description                                         | example          |
 | --------------- | ----------------- | --------------------------------------------------- | ---------------- |
@@ -60,7 +64,7 @@ http://localhost:8080/timeline/get?creationDateStart=08-09-2021?creationDateEnd=
 | momentDateStart | String (optional) | which retrieves moments created after a given date  | 01-06-1995 14:00 |
 | creationDateEnd | String (optional) | which retrieves moments created before a given date | 01-06-2000 14:00 |
 
-​	* (You can also use "add", "update", "delete" operations)
+​		* (You can also use "add", "update", "delete" methods)
 
 ### Successful Response: 
 
@@ -81,13 +85,13 @@ http://localhost:8080/moment/get?momentDateStart=01-06-2000 13:00?momentDateEnd=
 
 
 
-* User request ("/user")
+* ## User request ("/user")
 
-  
-
-  You can use "add", "update", "delete", "get" methods
+You can use "add", "update", "delete", "get" methods
 
 ----
+
+
 
 You can access H2 database at: 
 
